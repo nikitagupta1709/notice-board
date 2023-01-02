@@ -23,5 +23,16 @@ export const create = async(req, res) => {
 // get all notices
 
 export const getAllNotices = async (req,res) => {
-    
+    try {
+        let notice = await noticeModel.find();
+        res.send({
+            error: false,
+            data: notice
+        })
+
+    } catch (error) {
+        res.status(500).send({
+            message: error
+        })
+    }
 }
