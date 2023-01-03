@@ -47,7 +47,6 @@ export default function Notice() {
 
         {allNotice.reverse().map((item) => 
           <div key={item._id} className="mainDiv">
-
             <p className='desc'>{item.desc}</p>
             <br/>
             <div className='lower'>
