@@ -1,13 +1,12 @@
 import './App.css';
 import AllRoutes from './Components/AllRoutes';
-import Login from './Pages/Login/Login';
-
+// import Home from './Pages/Home';
 //  https://noticeboard.onrender.com
 
 function App() {
   return (
     <div className="App">
-      <Login />
+      {/* <Home /> */}
       <AllRoutes />
     </div>
   );

@@ -1,0 +1,46 @@
+.head{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: auto;
+    margin-right: 100px ;
+}
+.section{
+    width: 80%;
+    /* border: 1px solid black; */
+    padding: 10px;
+    margin: auto;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.mainDiv{
+    background-color: black;
+    /* width: 100%; */
+    color: white;
+    /* color: black; */
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid red; */
+    border-radius: 10px;
+    padding: 20px;
+}
+.desc{
+    align-content: flex-start;
+}
+.lower{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* border: 1px solid yellow; */
+}
+.time{
+    display: flex;
+    flex-direction: row;
+    gap: 3px;
+}
+.btnNotoce{
+    height: 30px;
+    width: 50px;
+}

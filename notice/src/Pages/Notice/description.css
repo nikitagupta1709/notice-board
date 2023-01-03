@@ -1,0 +1,23 @@
+.form{
+    width: 60%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: auto;
+}
+.input{
+    padding: 20px;
+    border: 1px solid black;
+    width: 100%;
+    border-radius: 10px;
+    height: 70px;
+}
+.btn{
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    font-size: 16px;
+    align-self: flex-end;
+}

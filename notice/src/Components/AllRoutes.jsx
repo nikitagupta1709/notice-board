@@ -6,8 +6,7 @@ import Notice from '../Pages/Notice/Notice'
 export default function AllRoutes() {
   return (
     <Routes>
-      <Route path='/auth/login' element={<Login />}></Route>
-      <Route path='/notice/create' element={<Notice/>}></Route>
+      <Route path='/' element={<Login />}></Route>
       <Route path='/notice/' element={<Notice/>}></Route>
     </Routes>
   )
