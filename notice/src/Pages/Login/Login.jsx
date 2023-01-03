@@ -7,6 +7,7 @@ import toast, { Toaster } from 'react-hot-toast';
 export default function Login() {
   const [username , setUser] = useState("");
   const navigate = useNavigate();
+  
   let user = JSON.parse(localStorage.getItem("username")) || false ;
 
   useEffect(() => {
@@ -15,9 +16,11 @@ export default function Login() {
     }
   }, []);
 
+  // loggin into 
   const handleSubmit = (e) => {
     e.preventDefault();
     try {
+
       axios.post(`https://noticeboard.onrender.com/auth/login`, {username})
       .then((response) => {
         localStorage.setItem("username", JSON.stringify(response.data.data.username));
@@ -25,7 +28,9 @@ export default function Login() {
         navigate("/notice")
       })
       .catch((err) => toast.error("Only alphanumeric username !!"))
-    } catch (error) {
+
+    } 
+    catch (error) {
       console.log(error)
     }
 
