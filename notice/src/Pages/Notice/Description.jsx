@@ -32,6 +32,7 @@ export default function Description() {
     catch (error) {
         console.log(error)
     }
+    e.target.reset();
   }
   
   return (
