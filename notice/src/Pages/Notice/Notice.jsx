@@ -51,7 +51,7 @@ export default function Notice() {
             <p className='desc'>{item.desc}</p>
             <br/>
             <div className='lower'>
-              <p>username:- {item.username}</p>
+              <p>{item.username}</p>
 
               <div className='time'>
                 <p>{new Date(item.createdAt).toDateString()}</p>
