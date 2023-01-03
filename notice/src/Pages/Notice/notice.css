@@ -7,8 +7,7 @@
     margin-right: 100px ;
 }
 .section{
-    width: 80%;
-    /* border: 1px solid black; */
+    width: 60%;
     padding: 10px;
     margin: auto;
     gap: 20px;
@@ -17,23 +16,19 @@
 }
 .mainDiv{
     background-color: black;
-    /* width: 100%; */
     color: white;
-    /* color: black; */
     display: flex;
     flex-direction: column;
-    /* border: 1px solid red; */
     border-radius: 10px;
     padding: 20px;
 }
 .desc{
-    align-content: flex-start;
+    text-align: start;
 }
 .lower{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    /* border: 1px solid yellow; */
 }
 .time{
     display: flex;

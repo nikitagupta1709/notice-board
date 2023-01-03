@@ -3,6 +3,7 @@ import { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import Description from './Description';
 import './notice.css'
+import toast, { Toaster } from 'react-hot-toast';
 
 export default function Notice() {
   const [allNotice, setAllNotice] = useState([]);
@@ -16,7 +17,7 @@ export default function Notice() {
     else{
       getNotice();
     }
-  }, [username])
+  }, [allNotice])
 
   const getNotice = () => {
     axios.get("https://noticeboard.onrender.com/notice/")
@@ -24,7 +25,7 @@ export default function Notice() {
   }
   const handleLogout = () => {
     localStorage.removeItem("username");
-    alert("You have been looged out");
+    toast.success("You have been looged out");
     navigate("/");
   }
 
@@ -50,6 +51,7 @@ export default function Notice() {
           </div>
         )}
       </div>
+      <Toaster />
     </div>
   )
 }

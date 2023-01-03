@@ -7,7 +7,7 @@ export default function AllRoutes() {
   return (
     <Routes>
       <Route path='/' element={<Login />}></Route>
-      <Route path='/notice/' element={<Notice/>}></Route>
+      <Route path='/notice' element={<Notice/>}></Route>
     </Routes>
   )
 }
